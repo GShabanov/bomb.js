@@ -1915,6 +1915,8 @@ var d = document;
             ctx.restore();
             requestAnimationFrame(initMenu);
         }
+
+        ctx.restore();
     }
 
     function initControls()
@@ -1967,6 +1969,7 @@ var d = document;
 
         drawKey(5, 7, 'Ctrl');
         drawKey(5, 8, 'Alt');
+        ctx.restore();
 
         //Draw space
         ctx.save();
